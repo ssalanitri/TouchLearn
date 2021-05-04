@@ -1,0 +1,2 @@
+(this.webpackJsonptouchlearn=this.webpackJsonptouchlearn||[]).push([[43],{159:function(e,n,a){"use strict";a.r(n);var s=a(62),t=Object(s.defineMessages)({app_name:"React Most Wanted",sign_in:"Sign in",sign_out:"Sign out",username:"Username",password:"Password",about:"About",home:"Home",page_not_found:"Page not found",settings:"Settings",theme:"Theme",default:"Default",red:"Red",green:"Green",language:"Language",en:"English",de:"German",ru:"Russian",menu:"Menu",menu_mini_mode:"Mini menu",offline:"Offline"});n.default=t}}]);
+//# sourceMappingURL=43.402855ae.chunk.js.map
