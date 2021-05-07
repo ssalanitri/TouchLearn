@@ -1,8 +1,6 @@
 import React from 'react'
 import Page from 'material-ui-shell/lib/containers/Page'
 import { useIntl } from 'react-intl'
-import CircularProgress from '@material-ui/core/CircularProgress'
-import SettingsIcon from '@material-ui/icons/Settings';
 import usePageContentStyles from '../../assets/styles/usePageContentStyles';
 import { Container } from '@material-ui/core';
 import GamesIcon from '@material-ui/icons/Games';

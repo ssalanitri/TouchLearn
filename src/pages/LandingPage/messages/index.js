@@ -21,7 +21,7 @@ const messageSources = {
 
 const match = parseLanguages(
   ['en', 'es', 'bs', 'ru', 'de', 'it', 'fr', 'pt'],
-  'en'
+  'es'
 )
 
 const messages = messageSources[match]
