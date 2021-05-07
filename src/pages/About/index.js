@@ -7,7 +7,10 @@ const Page = () => {
   return (
     <MarkdownPage
       pageProps={{
-        pageTitle: intl.formatMessage({ id: 'about', defaultMessage: 'About' }),
+        pageTitle: intl.formatMessage({ 
+                   id: 'about',
+                   defaultMessage: 'About' 
+              }),
       }}
       path={
         'https://raw.githubusercontent.com/TarikHuber/react-most-wanted/master/README.md'

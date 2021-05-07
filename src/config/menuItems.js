@@ -5,6 +5,7 @@ import allThemes from './themes'
 import SlideshowIcon from '@material-ui/icons/Slideshow';
 import HistoryIcon from '@material-ui/icons/History';
 import SearchIcon from '@material-ui/icons/Search';
+import GamesIcon from '@material-ui/icons/Games';
 
 import {
   Assignment,
@@ -166,7 +167,7 @@ const getMenuItems = (props) => {
       nestedItems: [
         {
           value: '/game',
-          visible: true, //!isAdmin,
+          visible: isAuthorised,
           primaryText: intl.formatMessage({
             id: 'game',
             defaultMessage: 'Juego ejemplo',
@@ -180,7 +181,7 @@ const getMenuItems = (props) => {
             id: 'create_game',
             defaultMessage: 'Crear Juego',
           }),
-          leftIcon: <HistoryIcon />,
+          leftIcon: <GamesIcon />,
         },
         {
           value: '/search_games',

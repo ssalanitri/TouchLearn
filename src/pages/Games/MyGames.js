@@ -7,24 +7,23 @@ import usePageContentStyles from '../../assets/styles/usePageContentStyles';
 import { Container } from '@material-ui/core';
 import GamesIcon from '@material-ui/icons/Games';
 
-
-const CreateGame = () => {
-    const intl = useIntl()
+const MyGames = () => {
+   const intl = useIntl()
     const classes = usePageContentStyles()
     return (
     <>
         <Page
          pageTitle={
              intl.formatMessage({ 
-                id: 'create_game', 
-                defaultMessage: 'Crear Juego'
+                id: 'my_game', 
+                defaultMessage: 'Mis Juego'
           })}
           appBarContent = {<GamesIcon />}
 
      >
         <Container   className={classes.root}>
 
-                <h1>CREAR JUEGO</h1>
+                <h1>MIS JUEGOS</h1>
 
         </Container>
     </Page>   
@@ -32,4 +31,4 @@ const CreateGame = () => {
     )
 }
 
-export default CreateGame
+export default MyGames

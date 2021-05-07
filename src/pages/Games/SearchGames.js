@@ -8,7 +8,7 @@ import { Container } from '@material-ui/core';
 import GamesIcon from '@material-ui/icons/Games';
 
 
-const CreateGame = () => {
+const SearchGames = () => {
     const intl = useIntl()
     const classes = usePageContentStyles()
     return (
@@ -24,7 +24,7 @@ const CreateGame = () => {
      >
         <Container   className={classes.root}>
 
-                <h1>CREAR JUEGO</h1>
+                <h1>BUSCAR JUEGOS</h1>
 
         </Container>
     </Page>   
@@ -32,4 +32,4 @@ const CreateGame = () => {
     )
 }
 
-export default CreateGame
+export default SearchGames

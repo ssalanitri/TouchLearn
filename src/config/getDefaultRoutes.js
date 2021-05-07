@@ -15,6 +15,7 @@ const GroupChat = lazy(() => import('rmw-shell/lib/pages/GroupChat'))
 const EditMembers = lazy(() => import('rmw-shell/lib/pages/EditMembers'))
 const EditAdmins = lazy(() => import('rmw-shell/lib/pages/EditAdmins'))
 const StoryCarousel = lazy(() => import('../pages/Games/StoryCarousel'))
+const CreateGame = lazy( () => import('../pages/Games/CreateGame'))
 
 const getDefaultRoutes = (appConfig) => {
   return [
@@ -40,7 +41,9 @@ const getDefaultRoutes = (appConfig) => {
     <AuthorizedRoute path="/users/:uid" exact component={User} />,
     <AuthorizedRoute path="/users/:uid/:tab" exact component={User} />,
     <AuthorizedRoute path='/game' exact component={StoryCarousel} />,
-    
+    <AuthorizedRoute path='/create_game' exact component={CreateGame} />,
+        
+
     <Route component={appConfig?.pages?.PageNotFound} />,
   ]
 }
