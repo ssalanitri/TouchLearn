@@ -8,6 +8,7 @@ import Loading from 'material-ui-shell/lib/components/Loading/Loading'
 import getDefaultRoutes from './getDefaultRoutes'
 import { defaultUserData, isGranted } from 'rmw-shell/lib/utils/auth'
 
+
 const config = {
   firebase: {
     prod: {
@@ -20,14 +21,6 @@ const config = {
         messagingSenderId: '1056913709551',
         appId: "1:1056913709551:web:894e1b7fae20a243c8be1a",
         measurementId: "G-SGPBDQD83D"
-
-        // apiKey: 'AIzaSyBQAmNJ2DbRyw8PqdmNWlePYtMP0hUcjpY',
-        // authDomain: 'react-most-wanted-3b1b2.firebaseapp.com',
-        // databaseURL: 'https://react-most-wanted-3b1b2.firebaseio.com',
-        // projectId: 'react-most-wanted-3b1b2',
-        // storageBucket: 'react-most-wanted-3b1b2.appspot.com',
-        // messagingSenderId: '258373383650',
-        // appId: '1:258373383650:web:b49ad5dd28da999a',
       },
       messaging: {
         publicVapidKey:
@@ -35,7 +28,7 @@ const config = {
       },
     },
     dev: {
-      initConfig: {
+       initConfig: {
         apiKey: 'AIzaSyCHiaVZMUd0dM8rSTJgyom6-j2wgVnIh_U',
         authDomain: 'touchlearn-fd5be.firebaseapp.com',
         databaseURL: 'https://touchlearn-fd5be-default-rtdb.firebaseio.com/',
@@ -43,13 +36,7 @@ const config = {
         storageBucket: 'touchlearn-fd5be.appspot.com',
         messagingSenderId: '1056913709551',
         appId: "1:1056913709551:web:894e1b7fae20a243c8be1a",
-        // apiKey: 'AIzaSyBQAmNJ2DbRyw8PqdmNWlePYtMP0hUcjpY',
-        // authDomain: 'react-most-wanted-3b1b2.firebaseapp.com',
-        // databaseURL: 'https://react-most-wanted-3b1b2.firebaseio.com',
-        // projectId: 'react-most-wanted-3b1b2',
-        // storageBucket: 'react-most-wanted-3b1b2.appspot.com',
-        // messagingSenderId: '258373383650',
-        // appId: '1:258373383650:web:b49ad5dd28da999a',
+        measurementId: "G-SGPBDQD83D"
       },
       messaging: {
         publicVapidKey:
@@ -58,27 +45,28 @@ const config = {
     },
     devd: {
       initConfig: {
-        apiKey: 'AIzaSyB31cMH9nJnERC1WCWA7lQHnY08voLs-Z0',
-        authDomain: 'react-most-wanted-dev.firebaseapp.com',
-        databaseURL: 'https://react-most-wanted-dev.firebaseio.com',
-        projectId: 'react-most-wanted-dev',
-        storageBucket: 'react-most-wanted-dev.appspot.com',
-        messagingSenderId: '70650394824',
-        appId: '1:70650394824:web:7cd3113c37741efc',
+        apiKey: 'AIzaSyCHiaVZMUd0dM8rSTJgyom6-j2wgVnIh_U',
+        authDomain: 'touchlearn-fd5be.firebaseapp.com',
+        databaseURL: 'https://touchlearn-fd5be-default-rtdb.firebaseio.com/',
+        projectId: 'touchlearn-fd5be',
+        storageBucket: 'touchlearn-fd5be.appspot.com',
+        messagingSenderId: '1056913709551',
+        appId: "1:1056913709551:web:894e1b7fae20a243c8be1a",
+        measurementId: "G-SGPBDQD83D"
       },
       messaging: {
         publicVapidKey:
-          'BGddXH_O6qLmcingsSJx-R3hC8U9yUr2mW4ko63fF__e50WvfRcBfZu_JyBzLI35DNUE5x_9CPBqe64BWniCxV0',
+          'BEthk1-Qmoh9opZbi1AUZpxANTu6djVRDph4MLpyO2Qk6Dglm1Sa8Yt_pYi4EhYi3Tj-xgLqUktlbNuP_RP6gto',
       },
     },
     firebaseuiProps: {
       signInOptions: [
         'google.com',
-      //  'facebook.com',
-      //  'twitter.com',
+        'facebook.com',
+        'twitter.com',
         'github.com',
         'password',
-      //  'phone',
+        'phone',
       ],
     },
   },
@@ -168,7 +156,7 @@ const config = {
   locale: {
     locales,
     persistKey: 'base-shell:locale',
-    defaultLocale: parseLanguages(['en','es', 'de', 'ru'], 'es'),
+    defaultLocale: parseLanguages(['en', 'de', 'ru','es'], 'es'),
     onError: (e) => {
       //console.warn(e)
 

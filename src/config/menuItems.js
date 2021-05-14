@@ -214,53 +214,53 @@ const getMenuItems = (props) => {
       ],
     },
   
-    {
-      primaryText: intl.formatMessage({
-        id: 'demos',
-        defaultMessage: 'Demos',
-      }),
-      visible: isAuthorised,
-      primaryTogglesNestedList: true,
-      leftIcon: <Slideshow />,
-      nestedItems: [
-        {
-          value: '/admin',
-          visible: !isAdmin,
-          primaryText: intl.formatMessage({
-            id: 'admin',
-            defaultMessage: 'Admin',
-          }),
-          leftIcon: <Security />,
-        },
-        {
-          value: '/companies',
-          visible: isGranted(auth, 'read_companies'),
-          primaryText: intl.formatMessage({
-            id: 'companies',
-            defaultMessage: 'Companies',
-          }),
-          leftIcon: <Business />,
-        },
-        {
-          value: '/tasks',
-          visible: isAuthorised,
-          primaryText: intl.formatMessage({
-            id: 'tasks',
-            defaultMessage: 'Tasks',
-          }),
-          leftIcon: <Assignment />,
-        },
-        {
-          value: '/posts',
-          visible: isAuthorised,
-          primaryText: intl.formatMessage({
-            id: 'posts',
-            defaultMessage: 'Posts',
-          }),
-          leftIcon: <CallToAction />,
-        },
-      ],
-    },
+    // {
+    //   primaryText: intl.formatMessage({
+    //     id: 'demos',
+    //     defaultMessage: 'Demos',
+    //   }),
+    //   visible: isAuthorised,
+    //   primaryTogglesNestedList: true,
+    //   leftIcon: <Slideshow />,
+    //   nestedItems: [
+    //     {
+    //       value: '/admin',
+    //       visible: !isAdmin,
+    //       primaryText: intl.formatMessage({
+    //         id: 'admin',
+    //         defaultMessage: 'Admin',
+    //       }),
+    //       leftIcon: <Security />,
+    //     },
+    //     {
+    //       value: '/companies',
+    //       visible: isGranted(auth, 'read_companies'),
+    //       primaryText: intl.formatMessage({
+    //         id: 'companies',
+    //         defaultMessage: 'Companies',
+    //       }),
+    //       leftIcon: <Business />,
+    //     },
+    //     {
+    //       value: '/tasks',
+    //       visible: isAuthorised,
+    //       primaryText: intl.formatMessage({
+    //         id: 'tasks',
+    //         defaultMessage: 'Tasks',
+    //       }),
+    //       leftIcon: <Assignment />,
+    //     },
+    //     {
+    //       value: '/posts',
+    //       visible: isAuthorised,
+    //       primaryText: intl.formatMessage({
+    //         id: 'posts',
+    //         defaultMessage: 'Posts',
+    //       }),
+    //       leftIcon: <CallToAction />,
+    //     },
+    //   ],
+    // },
     {
       primaryText: intl.formatMessage({
         id: 'tutorial',
