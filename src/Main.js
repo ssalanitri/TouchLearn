@@ -1,5 +1,4 @@
 import React from 'react';
-
 import App from 'base-shell/lib/index'
 import config from './config/config'
 

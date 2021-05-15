@@ -1,5 +1,5 @@
 
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, withStyles } from '@material-ui/core';
 
 
 const usePageContentStyles  = makeStyles({
@@ -21,4 +21,4 @@ const usePageContentStyles  = makeStyles({
     },
 });
 
-export default usePageContentStyles;
+export default withStyles(usePageContentStyles);

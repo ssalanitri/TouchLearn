@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography'
 import { useIntl } from 'react-intl'
 import { usePaths } from 'rmw-shell/lib/providers/Firebase/Paths'
 
+
 const ReportContainer = ({ children }) => {
   return (
     <div
